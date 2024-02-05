@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="title">DojoWeather</div>
+        <ul class="menu">
+            <li><a onclick="menuClickedmessage(this)" class="menu-button" href="#">Burbank</a></li>
+            <li><a onclick="menuClickedmessage(this)" class="menu-button" href="#">Chicago</a></li>
+            <li><a onclick="menuClickedmessage(this)" class="menu-button" href="#">Dallas</a></li>
+        </ul>
+    </header>
+    <div class="top-band">
+        <div class="city-name">
+            <h1>San Jose</h1>
+        </div>
+        <div class="temp-setting">
+            <p>show temperature in</p>
+            <select onchange="setTempUnit(this)" name="temp-unit" id="temp-unit">
+                <option value="celsius">°C</option>
+                <option value="farenheit">°F</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="weather-container">
+        <div class="weather-card">
+            <div class="day">
+                <p>Today</p>
+            </div>
+            <div class="forecast-image">
+                <img class="weather-icon" src="assets/some_rain.png" alt="image of the rain">
+            </div>
+            <div class="forecast">
+                <p>some rain</p>
+            </div>
+            <div class="temperature">
+                <div class="day-temp">
+                    <p><span id="day-temp-1">24</span>°</p>
+                </div>
+                <div class="eve-temp">
+                    <p><span id="eve-temp-1">18</span>°</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <div class="day">
+                <p>Tomorrow</p>
+            </div>
+            <div class="forecast-image">
+                <img class="weather-icon" src="assets/some_sun.png" alt="image of the sun">
+            </div>
+            <div class="forecast">
+                <p>some sun</p>
+            </div>
+            <div class="temperature">
+                <div class="day-temp">
+                    <p><span id="day-temp-2">27</span>°</p>
+                </div>
+                <div class="eve-temp">
+                    <p><span id="eve-temp-2">19</span>°</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <div class="day">
+                <p>Friday</p>
+            </div>
+            <div class="forecast-image">
+                <img class="weather-icon" src="assets/some_clouds.png" alt="image of the clouds">
+            </div>
+            <div class="forecast">
+                <p>some clouds</p>
+            </div>
+            <div class="temperature">
+                <div class="day-temp">
+                    <p><span id="day-temp-3">21</span>°</p>
+                </div>
+                <div class="eve-temp">
+                    <p><span id="eve-temp-3">16</span>°</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <div class="day">
+                <p>Saturday</p>
+            </div>
+            <div class="forecast-image">
+                <img class="weather-icon" src="assets/some_sun.png" alt="image of the sun">
+            </div>
+            <div class="forecast">
+                <p>some sun</p>
+            </div>
+            <div class="temperature">
+                <div class="day-temp">
+                    <p><span id="day-temp-4">26</span>°</p>
+                </div>
+                <div class="eve-temp">
+                    <p><span id="eve-temp-4">21</span>°</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cookie-banner">
+        <img class="icon" src="assets/cookie.png" alt="cookie">
+        <p class="warning-text"><span class="bold">Stop! Cookie time</span><br>
+            We use cookies (sadly not the edibale ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        <button onclick="ClosingCookieWindow()" >I Accept</button>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

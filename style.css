@@ -1,0 +1,137 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(167, 196, 244);
+    padding: 10px 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.menu-button{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.title{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Top band section */
+.top-band{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    border-bottom: 2px black solid;
+}
+
+.temp-setting{
+    display: flex;
+    gap: 5px;
+}
+
+/* weather card */
+.weather-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.weather-icon{
+    width: 100px;
+    border-radius: 100%;
+}
+
+.weather-card{
+    display: flex;
+    flex: 1;
+    background-color: rgb(238, 238, 238);
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.temperature{
+    display: flex;
+    justify-content: space-around;
+}
+
+.day, .temperature{
+    font-weight: bold;
+}
+
+.forecast{
+    font-size: 0.8rem;
+}
+
+.day-temp{
+    color: rgb(190, 59, 49);
+}
+
+.eve-temp{
+    color: rgb(65, 118, 221);
+}
+
+/* cookie banner */
+.cookie-banner{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    padding: 10px 10px;
+    border: 2px black solid;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.warning-text{
+    font-size: small;
+}
+
+button{
+    background-color: rgb(75, 160, 181);
+    color: white;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 2px black solid;
+    
+}
